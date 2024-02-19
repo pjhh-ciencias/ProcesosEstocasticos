@@ -1,0 +1,210 @@
+
+<!DOCTYPE html PUBLIC >
+
+<html lang="es">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Following part is mathjax, for latex-->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    <!-- This part is for jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- This part is to load main.js -->
+    <script type="text/javascript" src="./main.js"></script>
+
+
+
+    <!-- Next part is for new coomands -->
+    <script>
+      window.MathJax = {
+        tex: {
+          macros: {
+            sen: "\\operatorname{sen}",
+            seg: ["\\overrightarrow{#1}", 1]
+          },
+          tags: "ams" /* this part is for numbered equations */
+        }
+      };
+    </script>
+
+    <!-- This part is for using single $ for latex input, instead of \(\) -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+    </script>
+    
+    <!-- This part restart counter of cards to start at n+1 -->
+    <style>
+    .lista{
+        counter-reset: listaCounter 0 sublistaCounter 1 subsublistaCounter 1 subsubsublistaCounter 1;
+      }
+    /* .sublista{
+        counter-reset: sublistaCounter 1  SubsublistaCounter;
+      } */
+    </style>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" , href="style.css" />
+    <!-- Top Menu  -->
+    
+          
+        <header class="main-header">
+        
+          <div class="logo_superior_umar">
+          <a href="https://www.umar.mx" target="_blank"><img src="./Imagenes/umar_logo_hd.webp" alt="Logo_UMAR" width="110%" height="auto"></a>
+          </div>
+          <div class="contenedor_titulo">
+          <div class="title">Análisis Matemático</div>
+          <div class="subtitle">Universidad del Mar, campus Huatulco</div>
+          <div class="subsubtitle">Licenciatura en Actuaría </div>
+          <!-- <div class="subsubtitle"><a href="https://www.umar.mx/web/ensenanza/licenciaturas/licenciatura_en_administracion_turistica" target="_blank">Licenciatura en Administración Turística</a> </div>    -->
+      
+          </div>
+
+      
+        </header>
+
+        <nav class="top-nav">
+          <ul>
+            <li> <a href="https://pjhh-ciencias.github.io/AnalisisMatematico/Home.html"> Inicio  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/AnalisisMatematico/Informacion_General.html">Información</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/AnalisisMatematico/Notas.html"> Notas  </a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/AnalisisMatematico/Ejercicios.html"> Ejercicios</a> </li>
+            <li> <a href="https://pjhh-ciencias.github.io/AnalisisMatematico/Enlaces_externos.html"> Links </a> </li>
+          </ul>
+          </nav>
+        <!-- 
+          <nav class="small-nav" align=right>
+            <button onclick="myFunction()">Claro/Obscuro 
+          </nav> 
+        -->
+
+      <!-- This part is for title in tab-->
+            
+      <title>Análisis Matemático</title>
+      </head>  
+          
+        <body class="fondo-body" >
+          
+        <div class="info-profesor-box">
+          <div class="informacion_profesor"> 
+            <div class="title_nombre">M. en C. Pablo Jorge Hernández Hernández</div>
+            <div class="subtitle_nombre">IIMA, Cubículo 5</div>
+          </div>
+        </div>
+
+      <div class="info-box" style = "font-family: 'Oldenburg', cursive;"><h1 class="title">Temario</h1>
+
+      <ol class="lista" >
+          <li><b>Topología básica en espacios métricos</b></li>
+            <ol class="sublista">
+              <li>Conjuntos finitos, numerables y no numerables.</li>
+              <li>Espacios métricos.</li>
+              <li>Conjuntos compactos.</li>
+              <li>Conjuntos conexos.</li>
+              <li>Sucesiones numéricas.</li>
+            </ol>
+
+        
+          <li ><b>Sucesiones y series numéricas</b></li>
+                 <ol class="sublista">
+                  <li>Sucesiones convergentes.</li>
+                  <li>Subsucesiones.</li>
+                  <li>Sucesiones de Cauchy.</li>
+                  <li>Espacios métricos completos.</li>
+                  <li>Límite superior e inferior.</li>
+                  <li>Series.</li>
+                  <li>Series de términos no negativos.</li>
+                  <li>Criterios de convergencia.</li>
+                  <li>El número $e$.</li>
+                </ol>
+          
+
+          <li><b>Continuidad</b></li>
+            <ol class="sublista">
+              <li>Límites de funciones.</li>
+                <li>Funciones continuas.</li>
+                <li>Continuidad y compacidad.</li>
+                <li>Continuidad y conexidad.</li>
+                <li>Discontinuidades.</li>
+                <li>Funciones monótonas.</li>
+                <li>Teorema del punto fijo.</li>
+            </ol>
+
+          <li><b>Sucesiones y series de funciones.</b></li>
+            <ol class="sublista">  
+              <li>·	Convergencia puntual.</li>
+              <li>Convergencia uniforme.</li>
+              <li>Convergencia uniforme y diferenciación.</li>
+              <li>Convergencia uniforme e integración.</li>
+              <li>Equicontinuidad.</li>
+              <li>Teorema de Stone-Weierstrass.</li> 
+              <li>Teorema de Arzelá-Ascoli.</li>
+              
+            </ol>
+       
+
+           
+            </ol>
+      </ol>
+<!-- 
+          <ol class="lista">
+            <li>Elemento 1</li>
+            <ol class="sublista">
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
+              <li>subelemento</li>
+              <ol class="subsublista">
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+                <li>subelemento</li>
+              </ol>
+              <li>subelemento</li>
+              <li>subelemento</li>
+            </ol>
+            <li>Elemento 2</li>
+            <ol class="sublista">
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+              <li>subelemento</li>
+            </ol>
+            <li>Elemento 3</li>
+          </ol> -->
+        
+      
+      </div>
+ 
+      <div class="info-box"  style = "font-family: 'Oldenburg', cursive;"><h1 class="title">Bibliografía</h1>    
+      <b><font size="5">Libros básicos</font></b>
+          <ol>
+            <li><b>Apostol T. M. (1996) Mathematical analysis, USA: Addison-Wesley.</b></li>
+            <li><b>Fitzpatrick P.M., Royden H.L. (2010) Real Analysis, USA: Pearson.</b></li>
+            <li><b>Rudin W. (1976) Principles of mathematical analysis, New York: McGraw-Hill. </b></li>
+          </ol>
+  
+        <b><font size="5">Libros de consulta</font></b>
+          <ol>
+            <li><b>Bartle R.  (1976) The elements of real analysis, New York: J. Wiley.</b></li>
+            <li><b>Lang S. (1990) Introducción al análisis matemático, México: Addison-Wesley Iberoamericana.</b></li>
+          </ol>
+  </div>
+
+
+      </body>
+  </html>
